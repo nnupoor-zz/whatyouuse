@@ -4,9 +4,13 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+
+//custom routes
+var movies = require('./routes/movie');
 
 var app = express();
 
@@ -24,7 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
-
+app.use('/api',movies);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
@@ -55,6 +59,12 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
+
+//connect DB
+var dbName = 'movieDB';
+var connectionstring = 'mongodb://localhost:27017'+dbName;
+
+//mongoose.connect(connectionstring);
 
 
 module.exports = app;
