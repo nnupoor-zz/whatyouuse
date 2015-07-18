@@ -1,0 +1,131 @@
+body  {
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #eee;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.header__landing{
+	border-bottom: 1px solid #f9f9f9;
+	background-color: #03a9f4;
+	height: 170px;
+	color: #fff;
+	/*padding: 85px 16px 0;*/
+}
+
+.header-title{
+	padding-top: 40px;
+}
+
+
+.footer--style{
+	border-top: 1px solid #f5f5f5;
+	background-color: #eee;
+}
+
+
+.container{
+	padding: 80px  0;
+	background-color: #f9f9f9;
+	text-align: center;
+}
+
+
+
+/*cards size for phones*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width:  736px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  	.card--size {
+		  width: 250px;
+		  height: 270px;
+		}
+		.g-card{
+			display: block;
+			padding: 10px 40px;
+		}
+		.header-title span{
+			width: 75%;
+			text-align: center;
+			margin: 0 auto;
+			font-size: 25px;
+		}
+}
+
+/*for tablet*/
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1025px){
+  	.card--size {
+		  width: 200px;
+		  height: 250px;
+		}
+		.g-card{
+			display: inline-block;
+			padding: 10px 40px;
+		}
+		.header-title span{
+				width: 75%;
+				text-align: left;
+				margin: 0 auto;
+				font-size: 40px;
+			}
+  }
+
+/*for screen*/
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+  	.card--size {
+		  width: 320px;
+		  height: 320px;
+		}
+		.g-card{
+			display: inline-block;
+			padding: 10px 40px;
+		}
+		.header-title span{
+			width: 75%;
+			text-align: left;
+			margin: 0 auto;
+			font-size: 40px;
+		}
+}
+
+
+
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+    -moz-background-size:100% 100%; /* Firefox 3.6 */
+    background-size:100% 100%; 
+    background-repeat:no-repeat;
+}
+
+/**/
+
+.hairs{
+	background:
+    url('../images/hairs.gif') bottom right 15% no-repeat #46B6AC;
+}
+
+.makeup{
+	background:
+    url('../images/beauty-.gif') bottom right 15% no-repeat #46B6AC;
+}
+
+.skincare{
+	background:
+    url('../images/mask_1x.png') bottom right 15% no-repeat #46B6AC;
+}
+
+.mdl-data-table th{
+	text-align: left;
+}
+
+
+
