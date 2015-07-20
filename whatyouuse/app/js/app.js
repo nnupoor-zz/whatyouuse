@@ -5,9 +5,9 @@
 var whatYouUseApp = angular.module('whatyouuseApp', [
   'ngRoute',
 //  'phonecatAnimations',
-  'phonecatControllers',
-  'phonecatFilters',
-  'phonecatServices'
+  // 'phonecatControllers',
+  // 'phonecatFilters',
+  // 'phonecatServices'
 ]);
 
 whatYouUseApp.config(['$routeProvider',
@@ -15,7 +15,7 @@ whatYouUseApp.config(['$routeProvider',
     $routeProvider.
       when('/landing', {
         templateUrl: 'partials/landing.html',
-        controller: 'PhoneListCtrl'
+       // controller: 'PhoneListCtrl'
       }).
       when('/product', {
         templateUrl: 'partials/dashboard.html',
@@ -23,7 +23,7 @@ whatYouUseApp.config(['$routeProvider',
       }).
       when('/product/:prodId', {
         templateUrl: 'partials/results.html',
-        controller: 'PhoneDetailCtrl'
+        //controller: 'PhoneDetailCtrl'
       }).
       otherwise({
         redirectTo: '/landing'
