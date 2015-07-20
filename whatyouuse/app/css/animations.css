@@ -41,7 +41,7 @@
 /* cross fading between routes with ngView */
 
 .view-container {
-  position: relative;
+  /*position: relative;*/
 }
 
 .view-frame.ng-enter,

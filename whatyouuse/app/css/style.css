@@ -9,7 +9,7 @@ a {
 }
 
 .header__landing{
-	border-bottom: 1px solid #f9f9f9;
+	border-bottom: 1px solid transparent;
 	background-color: #03a9f4;
 	height: 170px;
 	color: #fff;
@@ -110,17 +110,17 @@ a {
 
 .hairs{
 	background:
-    url('../images/hairs.gif') bottom right 15% no-repeat #46B6AC;
+    url('../img/hairs.gif') bottom right 15% no-repeat #46B6AC;
 }
 
 .makeup{
 	background:
-    url('../images/beauty-.gif') bottom right 15% no-repeat #46B6AC;
+    url('../img/beauty-.gif') bottom right 15% no-repeat #46B6AC;
 }
 
 .skincare{
 	background:
-    url('../images/mask_1x.png') bottom right 15% no-repeat #46B6AC;
+    url('../img/mask_1x.png') bottom right 15% no-repeat #46B6AC;
 }
 
 .mdl-data-table th{

@@ -3430,7 +3430,7 @@ MaterialDataTable.prototype.CssClasses_ = {
 
 MaterialDataTable.prototype.selectRow_ = function(checkbox, row, rows) {
   'use strict';
-
+  
   if (row) {
     return function() {
       if (checkbox.checked) {
@@ -3464,7 +3464,7 @@ MaterialDataTable.prototype.selectRow_ = function(checkbox, row, rows) {
 
 MaterialDataTable.prototype.createCheckbox_ = function(row, rows) {
   'use strict';
-
+  
   var label = document.createElement('label');
   label.classList.add('mdl-checkbox');
   label.classList.add('mdl-js-checkbox');
@@ -3488,7 +3488,7 @@ MaterialDataTable.prototype.createCheckbox_ = function(row, rows) {
  */
 MaterialDataTable.prototype.init = function() {
   'use strict';
-
+console.log('here');
   if (this.element_) {
 
     var firstHeader = this.element_.querySelector('th');
